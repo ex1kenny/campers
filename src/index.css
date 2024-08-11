@@ -1,0 +1,93 @@
+:root {
+  --color-dark: #101828;
+  --color-darkopacity: #10182899;
+  --color-grey: #475467;
+  --color-red: #e44848;
+  --color-yellow: #ffc531;
+  --color-lightbluegrey: #f2f4f7;
+  --color-lightgrey: #f7f7f7;
+  --animation: 150ms ease-in;
+}
+
+body {
+  background-color: #fff;
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  color: var(--color-dark);
+  margin: 0;
+  overflow: scroll;
+}
+
+div {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-track:hover,
+*::-webkit-scrollbar-thumb:focus {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background: #d9d9d9;
+  transition: background-color var(--animation);
+}
+
+*::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:focus {
+  background-color: var(--color-red);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-red);
+}

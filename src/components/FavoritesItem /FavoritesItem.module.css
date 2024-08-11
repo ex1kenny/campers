@@ -1,0 +1,93 @@
+.container {
+  width: 888px;
+  display: flex;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  gap: 22px;
+  margin-bottom: 32px;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.contentWrapper {
+  width: 526px;
+}
+
+.secondaryWrapper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.priceWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.secondaryContent {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.priceContent {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.favorite {
+  background: white;
+}
+
+.favorite:hover {
+  color: var(--color-red);
+}
+
+.favorite:hover svg {
+  fill: var(--color-red);
+}
+
+.rating {
+  line-height: 1.5;
+  text-decoration-line: underline;
+}
+
+.location {
+  line-height: 1.5;
+}
+
+.description {
+  color: var(--color-grey);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: var(--color-red);
+  border-radius: 200px;
+  padding: 16px 40px;
+  color: white;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.08px;
+  transition: var(--animation);
+}
+
+.button:hover {
+  background-color: #d14545;
+}

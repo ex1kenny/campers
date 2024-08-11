@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  gap: 24px;
+}
+
+.reviews {
+  width: 430px;
+}
+
+.list {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}

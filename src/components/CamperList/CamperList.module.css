@@ -1,0 +1,31 @@
+.list {
+  margin-bottom: 50px;
+}
+
+.button {
+  display: block;
+  padding: 16px 32px;
+  margin: 0 auto;
+  background-color: transparent;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.08px;
+  margin-bottom: 100px;
+  border-radius: 200px;
+  border: 1px solid rgba(71, 84, 103, 0.2);
+  transition: var(--animation);
+}
+
+.button:hover {
+  border: 1px solid var(--color-red);
+}
+
+.empty {
+  width: 888px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin-top: 20px;
+}

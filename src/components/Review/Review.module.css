@@ -1,0 +1,42 @@
+.nameWrapper {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: var(--color-lightbluegrey);
+}
+
+.name {
+  position: absolute;
+  color: var(--color-red);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.fullName {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.comment {
+  color: var(--color-grey);
+  line-height: 1.5;
+}
