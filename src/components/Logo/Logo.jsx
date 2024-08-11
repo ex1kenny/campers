@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import css from "./logo.module.css";
+import css from "./Logo.module.css";
 import { Icon } from "../Icon/Icon";
 const Logo = ({ favorites }) => {
   return (
