@@ -9,10 +9,6 @@ export const Icon = ({
   isInputStyled = false,
   isCloseStyled = false,
 }) => {
-  const basePath =
-    import.meta.env.MODE === "production"
-      ? `${import.meta.env.BASE_URL}/`
-      : "/";
   return (
     <svg
       className={
@@ -24,7 +20,7 @@ export const Icon = ({
       fill={fill}
       stroke={stroke}
     >
-      <use xlinkHref={`${basePath}sprite.svg#${id}`} />
+      <use xlinkHref={`/sprite.svg#${id}`} />
     </svg>
   );
 };
