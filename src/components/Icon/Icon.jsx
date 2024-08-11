@@ -9,25 +9,22 @@ export const Icon = ({
   isInputStyled = false,
   isCloseStyled = false,
 }) => {
-  // Обчислення шляху до спрайта в залежності від середовища
   const basePath =
-    import.meta.env.MODE === "production" ? `${import.meta.env.BASE_URL}` : "";
-
-  const spritePath = `${basePath}sprite.svg#${id}`;
-
-  console.log("SVG Sprite Path:", spritePath);
+    import.meta.env.MODE === "production"
+      ? `${import.meta.env.BASE_URL}/`
+      : "/";
   return (
     <svg
-      className={`${isInputStyled ? css.icon : ""} ${
-        isCloseStyled ? css.close : ""
-      }`}
+      className={
+        isInputStyled ? css.icon : null || isCloseStyled ? css.close : null
+      }
       width={width}
       height={height}
       role="img"
       fill={fill}
       stroke={stroke}
     >
-      <use href={`${basePath}/sprite.svg#${id}`} />
+      <use xlinkHref={`${basePath}sprite.svg#${id}`} />
     </svg>
   );
 };
