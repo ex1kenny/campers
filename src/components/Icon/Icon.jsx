@@ -13,6 +13,9 @@ export const Icon = ({
   const basePath =
     import.meta.env.MODE === "production" ? `${import.meta.env.BASE_URL}` : "";
 
+  const spritePath = `${basePath}sprite.svg#${id}`;
+
+  console.log("SVG Sprite Path:", spritePath);
   return (
     <svg
       className={`${isInputStyled ? css.icon : ""} ${
